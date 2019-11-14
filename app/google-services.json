@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "443807108267",
+    "firebase_url": "https://tag-trainer-android.firebaseio.com",
+    "project_id": "tag-trainer-android",
+    "storage_bucket": "tag-trainer-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443807108267:android:197a379efc02dd26e93bee",
+        "android_client_info": {
+          "package_name": "com.example.tagandroid1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443807108267-lu8m0ni3t9ra0t9fe9d9b7ftqs50klvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tagandroid1",
+            "certificate_hash": "de77d21c07b4ad0ea33aa27ce32d99b27fb04f0b"
+          }
+        },
+        {
+          "client_id": "443807108267-o741v8n9kgqk8rgeljstgh1v7paejnap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMg2BgVWITfBnoPlQaIunau4DQUJMySr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443807108267-o741v8n9kgqk8rgeljstgh1v7paejnap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
