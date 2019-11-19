@@ -18,9 +18,10 @@ import java.util.regex.Pattern;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.tagandroid1.R;
+import com.example.tagandroid1.dao.CartProductsDao;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
-import model.Product;
+import com.example.tagandroid1.model.Product;
 
 
 public class MobileTagTrainerActivity extends AppCompatActivity {
@@ -36,7 +37,6 @@ public class MobileTagTrainerActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_mobile_trainer);
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);

@@ -1,7 +1,9 @@
-package model;
+package com.example.tagandroid1.model;
 
 
 import androidx.annotation.NonNull;
+
+import java.io.Serializable;
 
 public class Product {
     private String id, name, category, variant;
@@ -58,6 +60,6 @@ public class Product {
     @NonNull
     @Override
     public String toString() {
-        return "Produto "+this.getName();
+        return this.getName() + " - " + getVariant() +  " - R$" + getPrice();
     }
 }
