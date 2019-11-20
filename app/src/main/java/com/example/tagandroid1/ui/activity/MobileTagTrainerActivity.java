@@ -18,7 +18,6 @@ import java.util.regex.Pattern;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.tagandroid1.R;
-import com.example.tagandroid1.dao.CartProductsDao;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import com.example.tagandroid1.model.Product;

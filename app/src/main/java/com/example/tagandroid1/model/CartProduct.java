@@ -1,5 +1,7 @@
 package com.example.tagandroid1.model;
 
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 
 public class CartProduct implements Serializable {
@@ -18,5 +20,15 @@ public class CartProduct implements Serializable {
 
     public int getQuantity(){
         return this.quantity;
+    }
+
+    public Product getProduct(){
+        return p;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return  p.getName() + " - Price: R$" + p.getPrice() + " - Quantity: " + this.quantity + " - Total Price: R$" + String.format("%.2f", p.getPrice() * quantity);
     }
 }

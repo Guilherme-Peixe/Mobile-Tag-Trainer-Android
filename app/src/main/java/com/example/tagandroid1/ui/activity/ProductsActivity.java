@@ -1,28 +1,18 @@
 package com.example.tagandroid1.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.database.DataSetObserver;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import com.example.tagandroid1.R;
 import com.example.tagandroid1.dao.CartProductsDao;
-import com.example.tagandroid1.dao.ProductsDao;
-import com.example.tagandroid1.model.CartProduct;
 import com.example.tagandroid1.model.Product;
 import com.example.tagandroid1.utils.ProductsUtils;
-
-import java.io.Serializable;
 import java.util.List;
 
 public class ProductsActivity extends AppCompatActivity {
@@ -50,9 +40,7 @@ public class ProductsActivity extends AppCompatActivity {
     }
 
     private void goToCartActivity() {
-        Intent goToCartIntent = new Intent(ProductsActivity.this, CartActivity.class);
-        goToCartIntent.putExtra("cartProducts",  cpDao.cartProductHashMap());
-        startActivity(goToCartIntent);
+        startActivity(new Intent(this, CartActivity.class));
     }
 
     private void productListConfig() {
