@@ -12,6 +12,7 @@
         android:layout_margin="8dp"
         android:layout_height="wrap_content"
         />
+
     <EditText
         android:id="@+id/activity_login_senha_et"
         android:layout_width="match_parent"
@@ -20,10 +21,18 @@
         android:layout_margin="8dp"
         android:layout_height="wrap_content"
         />
+
     <Button
         android:id="@+id/activity_login_signin_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="Login"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/activity_login_google_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
 </LinearLayout>
