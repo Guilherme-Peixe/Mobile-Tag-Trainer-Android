@@ -16,7 +16,7 @@ public class CartProductsDao {
     public void addToCart(Product p){
         boolean flag = false;
         for (CartProduct cp : products){
-            if(cp.getProduct() == p) {
+            if(cp.getProduct().getId() == p.getId()) {
                 flag = true;
                 cp.setQuantity(cp.getQuantity() + 1);
             }
@@ -26,6 +26,11 @@ public class CartProductsDao {
             products.add(new CartProduct(p));
 
 
+    }
+
+
+    public void removeFromCart(CartProduct productClicked) {
+        products.remove(productClicked);
     }
 
 
